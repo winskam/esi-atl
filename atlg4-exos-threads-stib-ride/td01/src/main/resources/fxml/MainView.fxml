@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<BorderPane prefHeight="395.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.TableController">
+   <top>
+      <TableView fx:id="myTable" prefHeight="315.0" prefWidth="690.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="numeroColumn" prefWidth="230.0" text="Numéro" />
+          <TableColumn fx:id="prenomColumn" prefWidth="230.0" text="Prénom" />
+            <TableColumn fx:id="nomColumn" prefWidth="230.0" text="Nom" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </top>
+   <left>
+      <HBox prefHeight="135.0" prefWidth="688.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="id" prefHeight="17.0" prefWidth="112.0" text="Numéro :">
+               <HBox.margin>
+                  <Insets left="10.0" top="30.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="id" onKeyPressed="#enterPressed">
+               <HBox.margin>
+                  <Insets left="10.0" top="25.0" />
+               </HBox.margin>
+            </TextField>
+            <Label prefHeight="17.0" prefWidth="109.0" text="Prénom :">
+               <HBox.margin>
+                  <Insets left="30.0" top="30.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="prenom" onKeyPressed="#enterPressed">
+               <HBox.margin>
+                  <Insets left="10.0" top="25.0" />
+               </HBox.margin>
+            </TextField>
+            <Label prefHeight="17.0" prefWidth="96.0" text="Nom :">
+               <HBox.margin>
+                  <Insets left="30.0" top="30.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="nom" onKeyPressed="#enterPressed">
+               <HBox.margin>
+                  <Insets left="10.0" top="25.0" />
+               </HBox.margin>
+            </TextField>
+            <Button fx:id="buttonAdd" mnemonicParsing="false" onAction="#handleButton" prefHeight="27.0" prefWidth="98.0" text="Add">
+               <HBox.margin>
+                  <Insets left="10.0" top="25.0" />
+               </HBox.margin>
+            </Button>
+            <Label fx:id="okInput" prefHeight="18.0" prefWidth="80.0" textFill="#21f025" />
+            <Label fx:id="errorInput" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="126.0" textAlignment="CENTER" textFill="#f20404">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </left>
+</BorderPane>

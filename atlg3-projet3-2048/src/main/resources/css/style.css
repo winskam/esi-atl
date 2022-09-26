@@ -1,0 +1,75 @@
+.root {
+    -fx-background-color:rgb(19, 87, 146);
+}
+
+BoardView {
+    -fx-hgap:3;
+    -fx-vgap:3;
+}
+
+EventsView {
+    -fx-control-inner-background:rgb(19, 87, 146);
+    -fx-background-insets:0;
+    -fx-pref-height:200;
+}
+
+GeneralView {
+    -fx-spacing:10;
+    -fx-padding:10;
+}
+
+PlayAgainButton {
+    -fx-background-color:rgb(197, 237, 247);
+}
+
+.textEvents {
+    -fx-fill:white;
+}
+
+.color0 {
+    -fx-fill:rgb(197, 237, 247);
+}
+
+.color2 {
+    -fx-fill:rgb(142, 225, 246);
+}
+
+.color4 {
+    -fx-fill:rgb(52, 206, 245);
+}
+
+.color8 {
+    -fx-fill:rgb(23, 175, 213);
+}
+
+.color16 {
+    -fx-fill:rgb(15, 133, 162);
+}
+
+.color32 {
+    -fx-fill:rgb(12, 90, 110);
+}
+
+.color64 {
+    -fx-fill:rgb(12, 110, 103);
+}
+
+.color128 {
+    -fx-fill:rgb(14, 154, 144);
+}
+
+.color256 {
+    -fx-fill:rgb(17, 186, 175);
+}
+
+.color512 {
+    -fx-fill:rgb(20, 216, 203);
+}
+
+.color1024 {
+    -fx-fill:rgb(24, 240, 226);
+}
+
+.color2048 {
+    -fx-fill:rgb(255, 0, 0);
+}
